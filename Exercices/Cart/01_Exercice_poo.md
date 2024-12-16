@@ -32,6 +32,14 @@ class DictStorage:
         """
         pass
 
+    def get_value(self, key: str)->float:
+        """
+        retourne le prix total du produit commandé
+        :param key: La clé à ajouter.
+        :param value: La valeur associée.
+        """
+        pass
+
     def all(self) -> List[Dict[str, float]]:
         """
         Retourne tous les produits dans le stockage sous forme de liste de tuples (clé, valeur).
