@@ -54,7 +54,7 @@ class DictStorage:
 
 # Création des produits
 laptop = Product("Laptop", 2400.0)
-mouse = Product("Mouse", 75.0)
+mouse = Product(name = "Mouse", price = 75.0)
 keyboard = Product("Keyboard", 50.0)
 
 # Initialisation du stockage
