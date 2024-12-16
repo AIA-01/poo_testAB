@@ -14,10 +14,9 @@ m = "Mississippi"
 ```
 
 **Étapes :**  
-1. **Comptez** :  
+1. **Comptez, créez des méthodes** :  
    - Le nombre de fois que la lettre `i` apparaît.  
    - Le nombre d'occurrences de chaque lettre.  
-2. **Créez une fonction Python** pour répondre à cette question.  
 
 ---
 
@@ -26,8 +25,6 @@ m = "Mississippi"
    - Le nombre de fois que le mot **"le"** apparaît dans le texte.  
    - Le nombre d’occurrences de la lettre **"e"**.  
 2. **Supprimez tous les "e"** à l’aide d’un script Python.
-3. Remplacez la ou les lettres apparaissant **le plus fréquemment** dans le mot `m` par la lettre `e`.  
-4. Calculez la fréquence d'apparition de chaque lettre après la modification.
 
 ```txt
 Je vois là-bas un être sans tête qui grimpe à une perche sans fin.
