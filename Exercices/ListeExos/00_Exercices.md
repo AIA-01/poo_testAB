@@ -14,10 +14,9 @@ m = "Mississippi"
 ```
 
 **Étapes :**  
-1. **Comptez** :  
+1. **Comptez, créez des méthodes** :  
    - Le nombre de fois que la lettre `i` apparaît.  
    - Le nombre d'occurrences de chaque lettre.  
-2. **Créez une fonction Python** pour répondre à cette question.  
 
 ---
 
