@@ -32,11 +32,7 @@ class DictStorage:
         
         del self.storage[name]
         
-    def total(self) ->float:
+    def all(self) -> Dict[str, float]:
         
-        total = 0
-        for name, value in self.storage.items():
-            total += value 
-        
-        return total
+        return self.storage
         
