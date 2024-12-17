@@ -2,15 +2,18 @@
 
 #### Développez :
 
-- Reprenez l'exercice précédent en créeant un CartService dans un dossier Services à la racine du projet. Et commandez des produits dans le fichier app.py
+- Reprenez l'exercice précédent en créeant un `CartService` dans un dossier Services à la racine du projet. Et commandez des produits dans le fichier app.py
 
 ```txt
 Cart/
 │
-├── app/               # Code source
-│   └── Services/      # Code lié aux technologies sous-jacentes (bases de données, API, etc.)
-│
-└── app.py             # Point d'entrée de l'application
+└── app/ 
+    ├── Models/
+    │      └── Product.py             # Modèle de données nos produits
+    ├── Services/
+    │      └── CartService.py         # Services la logique métier du panier
+    │
+    └── app.py                        # Point d'entrée de l'application
 ```
 
 Voici ce que vous devriez implémenter dans la classe `CartService`
