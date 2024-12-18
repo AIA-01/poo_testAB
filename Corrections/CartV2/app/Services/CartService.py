@@ -1,9 +1,11 @@
 from Models.Product import Product
+from typing import Dict
 
 class CartService:
     
     def __init__(self):
-        self.storage = {}
+        # un dictionnaire
+        self.storage : Dict[str, float] = {}
 
     def buy(self, product : Product, quantity : int ):
         

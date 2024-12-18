@@ -50,7 +50,7 @@ class Stock:
 - Créez une classe `Order` qui contient une liste des produits commandés.
 - Ajoutez une méthode `add_to_order()` pour ajouter un produit à la commande.
 - Ajoutez une méthode `calculate_total()` pour calculer le total de la commande en fonction des produits ajoutés.
-- Ajoutez une méthode `is_product_available()` pour vérifier si un produit est disponible en stock avant de l’ajouter à la commande.
+- Ajoutez une méthode `is_product_available()` pour vérifier si un produit est disponible en stock avant de l'ajouter à la commande.
 
 ```python
 class Order:
