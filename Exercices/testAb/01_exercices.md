@@ -32,7 +32,7 @@ $\hat{p}_{\text{pool}}$ :
    
 $\hat{p}_{\text{pool}} = \frac{n_A \times \hat{p}_A + n_B \times \hat{p}_B}{n_A + n_B}$
 
-1. Calculer la statistique $Z$ :  
+1. Calculer la statistique Z :  
    
 $Z = \frac{\hat{p}_A - \hat{p}_B}{\sqrt{\hat{p}_{\text{pool}} \times (1 - \hat{p}_{\text{pool}}) \times \left(\frac{1}{n_A} + \frac{1}{n_B}\right)}}$
 
