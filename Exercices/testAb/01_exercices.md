@@ -26,13 +26,17 @@ $IC = \hat{p} \pm Z \times \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$
 
 #### **Étape 3 : Tester l’hypothèse (p-value)**  
 Utiliser le **test Z** pour comparer les proportions.  
-1. Calculer la proportion combinée ($\hat{p}_{\text{pool}}$) :  
+1. Calculer la proportion combinée 
+   
+$\hat{p}_{\text{pool}}$ :  
+   
 $\hat{p}_{\text{pool}} = \frac{n_A \times \hat{p}_A + n_B \times \hat{p}_B}{n_A + n_B}$
 
-2. Calculer la statistique $Z$ :  
-   $Z = \frac{\hat{p}_A - \hat{p}_B}{\sqrt{\hat{p}_{\text{pool}} \times (1 - \hat{p}_{\text{pool}}) \times \left(\frac{1}{n_A} + \frac{1}{n_B}\right)}}$
+1. Calculer la statistique $Z$ :  
+   
+$Z = \frac{\hat{p}_A - \hat{p}_B}{\sqrt{\hat{p}_{\text{pool}} \times (1 - \hat{p}_{\text{pool}}) \times \left(\frac{1}{n_A} + \frac{1}{n_B}\right)}}$
 
-3. Trouver la p-value associée au $Z$.  
+2. Trouver la p-value associée au $Z$.  
 
 **Question 3 : Quelle est la p-value, et comment l’interpréter ?**  
 - Si $p < 0.05$, rejeter $H_0$.  
