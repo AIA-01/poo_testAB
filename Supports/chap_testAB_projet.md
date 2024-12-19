@@ -274,6 +274,17 @@ Les intervalles de confiance **se chevauchent** :
 **Conclusion provisoire :**  
 Impossible de conclure directement, car il existe une zone commune entre les deux intervalles (de $0.122$ à $0.136$). On doit donc utiliser la **p-value** pour déterminer si la différence est significative.
 
+## On utilise un autre test statistique la p-value
+
+La **p-value** dans un A/B test mesure la probabilité d'observer des résultats aussi extrêmes que ceux obtenus, en supposant que l'hypothèse nulle (pas de différence entre A et B) est vraie. Elle aide à déterminer si la différence est significative ou due au hasard.
+
+- **p > 0,05** : Pas de différence significative (on ne rejette pas l’hypothèse nulle).  
+- **p ≤ 0,05** : Différence significative (on rejette l’hypothèse nulle, avec un risque d’erreur de 5 %).  
+- **p ≤ 0,01** : Différence très significative (on rejette l’hypothèse nulle, avec un risque d’erreur de 1 %).  
+- **p ≤ 0,001** : Différence hautement significative (on rejette l’hypothèse nulle, avec un risque d’erreur de 0,1 %).  
+
+Ces seuils sont des conventions, mais leur choix dépend du contexte et des conséquences d'une erreur.
+
 
 ```python
 import math
