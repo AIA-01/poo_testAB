@@ -8,8 +8,8 @@ Faites les calculs en Python uniquement.
 
 | Version | Nombre de visiteurs ($n$) | Achats ($c$) |
 |---------|------------------------------|----------------|
-| A       | 1000                        | 120            |
-| B       | 1000                        | 140            |
+| A       | 1000                        | 110            |
+| B       | 1000                        | 150            |
 
 Ces données montrent le nombre total de visiteurs et le nombre de conversions (achats) pour chaque version.
 
