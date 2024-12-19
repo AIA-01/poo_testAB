@@ -59,22 +59,3 @@ $\hat{p}_{\text{pool}} = \frac{n_A \times \hat{p}_A + n_B \times \hat{p}_B}{n_A 
 1. Calcul des taux de conversion et des intervalles de confiance.  
 2. Décision basée sur la p-value (ou non) selon les résultats.  
 3. Discussion sur les limites du test et les recommandations pour l’entreprise.
-
----
-
-### **Bonus : Simuler les données avec Python**  
-Les étudiants avancés peuvent coder une simulation pour générer des données et refaire les calculs. Exemple de script de départ :
-
-```python
-import numpy as np
-
-# Simulation des données
-np.random.seed(42)
-visiteurs_A = 1000
-visiteurs_B = 1000
-achats_A = np.random.binomial(visiteurs_A, 0.12)
-achats_B = np.random.binomial(visiteurs_B, 0.14)
-
-print("Version A :", achats_A, "achats sur", visiteurs_A)
-print("Version B :", achats_B, "achats sur", visiteurs_B)
-```
