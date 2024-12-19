@@ -276,7 +276,7 @@ Impossible de conclure directement, car il existe une zone commune entre les deu
 
 ## On utilise un autre test statistique la p-value
 
-La **p-value** dans un A/B test mesure la probabilité d'observer des résultats aussi extrêmes que ceux obtenus, en supposant que l'hypothèse nulle (pas de différence entre A et B) est vraie. Elle aide à déterminer si la différence est significative ou due au hasard.
+- Rappels des seuils 
 
 - **p > 0,05** : Pas de différence significative (on ne rejette pas l’hypothèse nulle).  
 - **p ≤ 0,05** : Différence significative (on rejette l’hypothèse nulle, avec un risque d’erreur de 5 %).  
