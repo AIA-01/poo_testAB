@@ -274,6 +274,31 @@ Les intervalles de confiance **se chevauchent** :
 **Conclusion provisoire :**  
 Impossible de conclure directement, car il existe une zone commune entre les deux intervalles (de $0.122$ à $0.136$). On doit donc utiliser la **p-value** pour déterminer si la différence est significative.
 
+### En Python -> calcul de l'intervalle de confiance
+
+```python
+import math
+
+# Données pour chaque version
+p_A = 0.12  # Taux de conversion de la version A
+p_B = 0.14  # Taux de conversion de la version B
+n_A = 1000   # Taille de l'échantillon pour A
+n_B = 1000   # Taille de l'échantillon pour B
+Z = 1.96     # Valeur de Z pour un intervalle de confiance à 95%
+
+# Calcul de l'intervalle de confiance pour la version A
+IC_A_lower = p_A - Z * math.sqrt((p_A * (1 - p_A)) / n_A)
+IC_A_upper = p_A + Z * math.sqrt((p_A * (1 - p_A)) / n_A)
+
+# Calcul de l'intervalle de confiance pour la version B
+IC_B_lower = p_B - Z * math.sqrt((p_B * (1 - p_B)) / n_B)
+IC_B_upper = p_B + Z * math.sqrt((p_B * (1 - p_B)) / n_B)
+
+# Affichage des résultats
+print(f"Intervalle de confiance pour la Version A : [{IC_A_lower:.3f}, {IC_A_upper:.3f}]")
+print(f"Intervalle de confiance pour la Version B : [{IC_B_lower:.3f}, {IC_B_upper:.3f}]")
+```
+
 ---
 
 ### **4. Test statistique pour la p-value :**
@@ -287,18 +312,70 @@ $\hat{p}_{\text{pool}} = \frac{n_A \times \hat{p}_A + n_B \times \hat{p}_B}{n_A 
 $Z = \frac{0.12 - 0.14}{\sqrt{0.13 \times (1 - 0.13) \times \left(\frac{1}{1000} + \frac{1}{1000}\right)}}$
 $Z = \frac{-0.02}{\sqrt{0.13 \times 0.87 \times 0.002}} = \frac{-0.02}{\sqrt{0.0002262}} = \frac{-0.02}{0.01504} \approx -1.33$
 
-#### Étape 3 : Calcul de la p-value  
+### En Python 
+
+```python
+import math
+
+# Données initiales
+p_A = 0.12  # Taux de conversion de la version A
+p_B = 0.14  # Taux de conversion de la version B
+n_A = 1000   # Taille de l'échantillon pour A
+n_B = 1000   # Taille de l'échantillon pour B
+
+# Calcul de la proportion combinée (pooled proportion)
+p_hat = (p_A * n_A + p_B * n_B) / (n_A + n_B)
+
+# Calcul de la statistique Z
+z_value = abs( (p_A - p_B) / math.sqrt(p_hat * (1 - p_hat) * (1/n_A + 1/n_B)) )
+
+print(f"La valeur de Z est : {round(z_value,3) }")
+```
+
+#### Étape 3 : Calcul de la p-value (en pratique)
 On utilise la valeur absolue de $Z$ et on consulte une table de distribution normale pour obtenir la p-value :  
-- $Z = 1.33$ correspond à une probabilité de $0.0918$.  
-- La p-value est donc $0.0918 \times 2 = 0.1836$ (test bilatéral).  
+- $Z = 1.33$ correspond à une probabilité de $0.9082$.  
+- La p-value est donc $0.9082 \times 2 = 0.1836$ (test bilatéral).  
 
----
+1. **Calcul de la valeur z :**  
+   On as déjà la valeur $Z = 1.33$.
 
-### **5. Interprétation :**
-- **p-value = 0.1836** est supérieure à $0.05$ (seuil typique de significativité).  
-- Cela signifie qu’il n’y a **pas assez de preuves pour rejeter l’hypothèse nulle** ($H_0$), qui stipule qu’il n’y a pas de différence significative entre les versions A et B.  
+2. **Obtenir la p-value pour un test bilatéral :**  
+   Pour un test **bilatéral**, la p-value correspond à la probabilité des valeurs situées à gauche de $Z = 1.33$ **et** à droite de $Z = -1.33$. Comme la distribution normale est symétrique, on double la probabilité de $Z = 1.33$ pour tenir compte des deux côtés de la distribution.
 
-**Conclusion finale :**  
-Bien que les taux de conversion diffèrent légèrement (12 % vs 14 %), cette différence **n’est pas statistiquement significative**.
+   - La **probabilité à gauche de $Z = 1.33$** est $0.9082$ (comme on l'as mentionné).
+   - Donc, la probabilité à droite de $Z = 1.33$ est également $1 - 0.9082 = 0.0918$.
+
+   Pour un **test bilatéral**, la p-value est donc :
+   $p = 2 \times 0.0918 = 0.1836$
+
+3. **Interprétation de la p-value :**  
+   - **Si la p-value est inférieure au seuil de signification $\alpha$** (par exemple 0.05), tu rejettes l'hypothèse nulle et tu conclues qu'il y a une différence statistiquement significative.
+   - **Si la p-value est supérieure au seuil de signification**, tu ne rejette pas l'hypothèse nulle et tu conclues qu'il n'y a pas de différence significative.
+
+Seuil de signification est $\alpha = 0.05$, la p-value est **supérieure à 0.05**, ce qui signifie qu'on **ne rejettes pas l'hypothèse nulle**. 
+
+En d'autres termes, il n'y a pas suffisamment de preuves pour affirmer qu'il y a une différence significative entre les deux groupes A et B.
+
+### Code Python :
+
+```python
+from scipy.stats import norm
+
+# Calculer la probabilité cumulative pour Z = 1.33
+z_value = 1.33
+probability = norm.cdf(z_value)
+
+print(probability)  
+# Cela va afficher : 0.9082408643497193, ce qui correspond à la probabilité à gauche de Z = 1.33
+```
+
+Et ensuite, pour obtenir la **p-value bilatérale**, tu multiplies cette probabilité par 2 :
+
+```python
+# Calcul de la p-value pour un test bilatéral
+p_value = (1 - probability) * 2
+print(p_value)  # Cela affichera 0.1836
+```
 
 ---
