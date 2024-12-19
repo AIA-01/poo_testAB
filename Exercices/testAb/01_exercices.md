@@ -2,6 +2,8 @@
 
 ### **Étapes du TP :**
 
+Faites les calculs en Python uniquement.
+
 #### **Étape 1 : Préparation des données**  
 
 | Version | Nombre de visiteurs ($n$) | Achats ($c$) |
@@ -15,6 +17,7 @@ Ces données montrent le nombre total de visiteurs et le nombre de conversions (
 $Taux\ de\ conversion = \frac{Achats}{Nombre\ de\ visiteurs}$
 
 #### **Étape 2 : Calcul des intervalles de confiance**  
+à 95% le Z = 1.96 (moyenne 0 et écart type 1)
 À l’aide de la formule des intervalles de confiance pour une proportion :  
 $IC = \hat{p} \pm Z \times \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$
 

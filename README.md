@@ -15,6 +15,7 @@
 7. Test A/B introduction [support testA/B](./Supports/chap_testAB.md)
 8. Test A/B supports de cours [testAB](./Supports/chap_testAB_projet.md)
    1. TP [tp test AB](./Exercices/testAb/01_exercices.md)
+   2. La p-value est bilatéral dans le context du testAB [bilateral](./Supports/chap_bilateral.md)
    
 ---
 

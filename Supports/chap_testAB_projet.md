@@ -259,12 +259,12 @@ $IC = \hat{p} \pm Z \times \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$
 Avec $Z = 1.96$ pour un intervalle de confiance à 95 %.
 
 - **Version A :**  
-$IC_A = 0.12 \pm 1.96 \times \sqrt{\frac{0.12 \times 0.88}{1000}}  
-IC_A = [0.104, 0.136]$
+$IC_A = 0.12 \pm 1.96 \times \sqrt{\frac{0.12 \times 0.88}{1000}}$ 
+$IC_A = [0.104, 0.136]$
 
 - **Version B :**  
-$IC_B = 0.14 \pm 1.96 \times \sqrt{\frac{0.14 \times 0.86}{1000}}  
-IC_B = [0.122, 0.158]$
+$IC_B = 0.14 \pm 1.96 \times \sqrt{\frac{0.14 \times 0.86}{1000}}$  
+$IC_B = [0.122, 0.158]$
 
 #### **3. Observation :**
 Les intervalles de confiance **se chevauchent** :  
