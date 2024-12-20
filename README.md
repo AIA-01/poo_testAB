@@ -44,7 +44,7 @@
 - [jupyter](https://jupyter.org/)
 
 
-##Supports Git
+## Supports Git
 
 -  📂  [git](https://github.com/Antoine07/demo_git)
 
