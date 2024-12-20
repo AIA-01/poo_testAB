@@ -51,13 +51,3 @@ Vous voulez savoir si la différence de taux de conversion (achats/visiteurs) es
 Utilisez un **test bilatéral** quand **vous n’avez pas de préférence sur la direction de la différence**. Par exemple :
 - Vous voulez savoir **si les conversions sont différentes**, sans supposer à l’avance quelle version est meilleure.
 - Vous testez une hypothèse de manière exploratoire.
-
----
-
-### **Résumé à donner aux élèves :**
-- Un test bilatéral examine **les deux côtés** de la différence (supérieur **ou** inférieur).  
-- La courbe utilisée est souvent **symétrique**, donc on doit multiplier par 2 la p-value d’un test unilatéral.  
-- Si la p-value bilatérale est inférieure au seuil (par exemple 5 %), vous concluez que la différence est significative.  
-
-### **Exercice pour les élèves :**
-Imaginez un scénario avec deux groupes A et B (taux de clics, conversions, etc.), calculez la p-value unilatérale, puis utilisez-la pour tester en bilatéral. **Indiquez si la différence est significative.**
