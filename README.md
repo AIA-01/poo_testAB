@@ -18,10 +18,10 @@
    
 2. Introduction aux test A/B
    1. 🎯 Exercice de proba [proba](./Exercices/Proba/chap_proba.md)
-   2. Correction [proba](./Corrections/Proba/)
+      1. Correction [proba](./Corrections/Proba/)
    3. 📘 Test A/B introduction [support testA/B](./Supports/chap_testAB.md)
    4. 📘 Test A/B supports de cours [testAB](./Supports/chap_testAB_projet.md)
-   5. TP [tp test AB](./Exercices/testAb/01_exercices.md)
+      1. TP [tp test AB](./Exercices/testAb/01_exercices.md)
    6.  📘 Test A/B [support test continue et proportion](./Supports/chap_testAB_continue_proportion.md)
    
 3.  Expertise et entreprise [experise](./Supports/chap_expertise_entreprise.md)
