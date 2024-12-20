@@ -2,7 +2,7 @@
 
 ## Test A/B & Python  
 
-![test A/B](./Supports/images/stat.png)
+<img src="./Supports/images/stat.png" width="200" />
 
 1. 🐍 Python 
    1. Typage [typing](./chap_typage.md)
