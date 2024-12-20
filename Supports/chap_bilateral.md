@@ -28,21 +28,21 @@ Vous voulez savoir si la différence de taux de conversion (achats/visiteurs) es
 #### **Étapes :**
 
 1. **Taux de conversion** :  
-   - Version A : \( \frac{50}{200} = 0,25 \) (25 %).
-   - Version B : \( \frac{60}{200} = 0,30 \) (30 %).  
+   - Version A : $\frac{50}{200} = 0,25$ (25 %).
+   - Version B : $\frac{60}{200} = 0,30$ (30 %).  
 
-   Différence de taux = \( 0,30 - 0,25 = 0,05 \) (5 points de pourcentage).
+   Différence de taux = $0,30 - 0,25 = 0,05$ (5 points de pourcentage).
 
 2. **Calcul de la p-value pour un test unilatéral** :  
    Supposons que vous obtenez une p-value de **0,03** pour la direction où B > A (Version B est meilleure).
 
 3. **Test bilatéral :**  
    Puisque vous voulez vérifier **les deux directions** (B > A **ou** A > B), vous devez **multiplier par 2** :  
-   \( \text{p-value bilatérale} = 0,03 \times 2 = 0,06 \).
+   $\text{p-value bilatérale} = 0,03 \times 2 = 0,06$.
 
 4. **Conclusion :**  
-   - Si votre seuil est de 5 % (\( \alpha = 0,05 \)), alors :  
-     - Avec \( \text{p-value bilatérale} = 0,06 \), **la différence n'est pas significative**.  
+   - Si votre seuil est de 5 % ($\alpha = 0,05$), alors :  
+     - Avec $\text{p-value bilatérale} = 0,06$, **la différence n'est pas significative**.  
    - Vous ne pouvez pas conclure que l’une des versions est meilleure.
 
 ---
