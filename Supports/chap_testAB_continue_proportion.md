@@ -7,8 +7,11 @@ Disons que nous avons les données suivantes concernant le **temps passé** (en 
 Nous voulons tester s'il y a une différence significative entre le temps moyen passé sur le site par les deux groupes.
 
 ```python
-import numpy as np
 from scipy.stats import ttest_ind
+
+# todo implémenter la fonction moyenne
+def mean(numbers):
+   pass
 
 # Données
 A = [8, 10, 7, 9, 8, 11, 10, 12, 9, 8]
@@ -21,8 +24,8 @@ print(f"Statistique t : {stat}")
 print(f"P-Value : {p_value}")
 
 # Moyennes des groupes
-mean_A = np.mean(A)
-mean_B = np.mean(B)
+mean_A = mean(A)
+mean_B = mean(B)
 
 if p_value < 0.05:
     print("Il y a une différence significative entre les groupes A et B.")
