@@ -14,6 +14,7 @@ def mean(numbers):
    pass
 
 # Données
+# la variable aléatoire c'est t : correspond au temps d'attente 
 A = [8, 10, 7, 9, 8, 11, 10, 12, 9, 8]
 B = [6, 7, 8, 5, 7, 6, 8, 9, 7, 5]
 
